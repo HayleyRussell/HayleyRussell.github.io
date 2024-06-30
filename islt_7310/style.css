@@ -1,3 +1,12 @@
 h1 {
     color: #F0488B;
 }
+
+p:first-of-type::first-letter {
+    font-weight: bold;
+    font-size: 18;
+    line-height: 1;
+}
+p:not(:first-of-type) {
+    text-indent: 2em;
+}
