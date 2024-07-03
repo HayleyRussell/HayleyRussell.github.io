@@ -1,5 +1,11 @@
 h1 {
     color: #F0488B;
+    text-align: center
+}
+
+h2 {
+    color: #F0488B;
+    text-align: center
 }
 
 p:first-of-type::first-letter {
@@ -9,4 +15,88 @@ p:first-of-type::first-letter {
 }
 p:not(:first-of-type) {
     text-indent: 2em;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center
+}
+
+main {
+    background color: white;
+    color: black;
+    text-align: center; 
+    border: 1px solid ##CB105B
+}
+
+footer {
+    background-color: #FFE5E5;
+    color: black;
+    text-align: center;
+    padding: 1em;
+    flex: 0 1 auto;
+}
+
+.left-photo {
+    float: left;
+    margin-right: 15px; 
+    width: 200px; 
+    height: auto;
+}
+
+main.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    padding: 1em;
+    flex: 1 1 auto;
+    grid-template-areas: 
+    "left right"
+    "center center";
+}
+
+main.grid-container .left-column, 
+main.grid-container .right-column,
+main.grid-container .center-column {
+    background: #FFE5E5;
+    padding: 1em;
+    border: 1px solid #CB105B;
+    text-align: center;
+}
+
+main.grid-container .left-column {
+    grid-area: left;
+}
+
+main.grid-container .right-column {
+    grid-area: right;
+}
+
+main.grid-container .center-column {
+    grid-area: center;
+}
+
+main.grid-container .left-column, 
+main.grid-container .right-column {
+    background: #FFE5E5;
+    padding: 1em;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        flex: none;
+    }
+
+    main.grid-container {
+        grid-template-columns: 1fr;
+    }
 }
