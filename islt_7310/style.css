@@ -1,12 +1,24 @@
+@font-face { 
+    font-family: Garamond;
+    src: url("islt_7310/EB_Garamond/static/EBGaramond-Medium.ttf");
+     }
+
+@font-face { 
+    font-family: Serif;
+    src: url("islt_7310/DM_Serif_Text/DMSerifText-Regular.ttf");
+     }
+
 h1 {
     color: #F0488B;
-    text-align: center
+    text-align: center;
+    font-family: Garamond
 }
 
 h2 {
     color: #F0488B;
     text-align: center
 }
+
 
 p:first-of-type::first-letter {
     font-weight: bold;
@@ -52,6 +64,7 @@ footer {
 main.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: serif;
     gap: 1em;
     padding: 1em;
     flex: 1 1 auto;
@@ -98,5 +111,43 @@ main.grid-container .right-column {
 
     main.grid-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    body {
+        color: black;
+        font-family: serif;
+        margin: 1in;
+    }
+
+    h1 {
+        font-family: 'Garamond';
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    ul, ol {
+        font-size: 11px;
+    }
+
+    blockquote {
+        font-size: 11px;
+        font-style: italic;
+        margin: 10px 0;
+    }
+
+    footer {
+        display: none;
+    }
+    nav, .navbar, .nav-menu, .nav-toggle-label, img {
+        display: none;
+    }
+
+    .center-column, .education-details, .quote, footer {
+        page-break-inside: avoid;
     }
 }
