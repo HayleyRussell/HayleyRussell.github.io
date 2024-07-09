@@ -100,6 +100,11 @@ main.grid-container .right-column {
     padding: 1em;
 }
 
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -135,7 +140,7 @@ main.grid-container .right-column {
     }
 
     blockquote {
-        font-size: 11px;
+        font-size: 12px;
         font-style: italic;
         margin: 10px 0;
     }
