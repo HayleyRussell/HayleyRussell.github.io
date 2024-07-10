@@ -172,3 +172,30 @@ main.grid-container .right-column {
         page-break-inside: avoid;
     }
 }
+
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background-color: #FFE5E5;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+    }
+
+    .nav-menu li {
+        text-align: center
+    }
+
+
+
+
+
+
