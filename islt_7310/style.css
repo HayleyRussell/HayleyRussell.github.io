@@ -48,6 +48,8 @@ main {
 
 footer {
     background-image: url('https://hayleyrussell.github.io/islt_7310/images/IMG_6701.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     color: black;
     text-align: center;
     padding: 20px;
