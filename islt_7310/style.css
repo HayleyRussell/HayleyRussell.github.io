@@ -47,12 +47,11 @@ main {
 }
 
 footer {
-    background-image: url(https://HayleyRussell.github.io/islt_7310//islt_7310/images/IMG_6701.jpg');
+    background-image: url('https://hayleyrussell.github.io/islt_7310/images/IMG_6701.jpg');
     color: black;
     text-align: center;
     padding: 20px;
     flex: 0 1 auto;
-    background-size; cover;
     background-position: center;
     text-align: center;
 }
