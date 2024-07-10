@@ -47,11 +47,21 @@ main {
 }
 
 footer {
-    background-color: #FFE5E5;
+    background-image: url(/images/IMG_6701.jpg');
     color: black;
     text-align: center;
-    padding: 1em;
+    padding: 20px;
     flex: 0 1 auto;
+    background-size; cover;
+    background-position: center;
+    text-align: center;
+}
+
+footer .icon {
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .left-photo {
