@@ -65,6 +65,10 @@ footer .icon {
     margin-right: 8px;
 }
 
+footer .icon:hover {
+    transform: scale(1.2);
+}
+
 .left-photo {
     float: left;
     margin-right: 15px; 
