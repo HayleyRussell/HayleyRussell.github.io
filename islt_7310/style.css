@@ -1,49 +1,40 @@
 @font-face { 
     font-family: Garamond;
     src: url("islt_7310/EB_Garamond/static/EBGaramond-Medium.ttf");
-     }
+}
 
 @font-face { 
     font-family: Serif;
     src: url("islt_7310/DM_Serif_Text/DMSerifText-Regular.ttf");
-     }
+}
 
 h1 {
     color: #F0488B;
     text-align: center;
-    font-family: Garamond
+    font-family: Garamond;
 }
 
 h2 {
     color: #F0488B;
-    text-align: center
+    text-align: center;
 }
 
-
-p:first-of-type::first-letter {
-    font-weight: bold;
-    font-size: 18;
-    line-height: 1;
-}
-p:not(:first-of-type) {
-    text-indent: 2em;
-}
 
 body {
     font-family: Arial, sans-serif;
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    text-align: center
+    text-align: center;
 }
 
 main {
-    background color: white;
+    background-color: white;
     color: black;
     text-align: center; 
-    border: 1px solid ##CB105B
+    border: 1px solid #CB105B;
 }
 
 footer {
@@ -121,6 +112,24 @@ main.grid-container .right-column {
     height: auto;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    margin: 0 auto;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
@@ -164,6 +173,7 @@ main.grid-container .right-column {
     footer {
         display: none;
     }
+
     nav, .navbar, .nav-menu, .nav-toggle-label, img {
         display: none;
     }
@@ -173,8 +183,6 @@ main.grid-container .right-column {
     }
 }
 
-
-/* Mobile styles */
 @media (max-width: 600px) {
     .nav-toggle-label {
         display: block;
@@ -184,18 +192,4 @@ main.grid-container .right-column {
         display: none;
         flex-direction: column;
         background-color: #FFE5E5;
-        position: absolute;
-        width: 100%;
-        top: 100%;
-        left: 0;
-    }
-
-    .nav-menu li {
-        text-align: center
-    }
-
-
-
-
-
-
+       
