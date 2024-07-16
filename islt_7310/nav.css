@@ -3,18 +3,21 @@
     background-color: #FFE5E5;
     overflow: hidden;
     align-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
-    float: left;
-    display: block;
+    display: inline-block;
     color: #CB105B;
+    border: 1px solid #CB105B;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 15px 15px 25px;
     text-decoration: none;
-    font-size: 17px;
-    justify-content: center;
+    background-color: #ffe5e5;
   }
   
   /* Add an active class to highlight the current page */
