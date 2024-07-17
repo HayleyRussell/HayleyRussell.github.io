@@ -253,6 +253,7 @@ main.grid-container .right-column {
         border: 1px solid #cb105b;
         border-radius: 10px;
         background-color: #ffe5e5;
+        text-align: center;
     }
 
 .contact-form form {
